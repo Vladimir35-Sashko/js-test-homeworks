@@ -77,3 +77,133 @@
 //     }
 //     return arr.slice(0,);
 // }
+// ====================17================
+// const start = 3;
+// const end = 7;
+// for (let i = start; i <= end; i += 1)
+//   console.log(i);
+// ========================18=================
+// function calculateTotal(number) {
+//     let total = 0;
+//     for (i = 1; i <= number; i += 1) {
+//         total += i;
+//     }
+//     return total;
+// }
+// ======================19==================
+// const fruits = ['apple', 'plum', 'pear', 'orange'];
+// for (let i = 0; i < fruits.length; i+= 1) { 
+//   const fruit = fruits[i]; 
+//   console.log(fruit);
+// }
+// =======================20==================
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//    for ( let i = 0; i < order.length ; i += 1) {
+//         total += order[i];
+//     }
+//   return total;
+// }
+// =====================21===================
+// function findLongestWord(string) {
+// 	const arrayString = string.split(" ");
+// 	let longestWord = arrayString[0];
+// 	for (let i = 0; i < arrayString.length; i+=1) {
+// 		if (longestWord.length < arrayString[i].length) {
+// 			longestWord = arrayString[i];
+// 		}
+// 	}
+// 	return longestWord;
+// }
+// ========================22=========================
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+//     for(let i = min; i<=max; i+=1){
+//   numbers.push(i);
+//   }
+//   return numbers;
+// }
+// =======================23=========================
+// function filterArray(numbers, value) {
+//   const result = [];
+//     for (let i = 0; i < numbers.length; i += 1)
+//     {
+//         if (numbers[i] > value) { result.push(numbers[i]); }
+// }
+//   return result;
+// }
+// =======================24=========================
+// function checkFruit(fruit) {
+//   const fruits = ["apple", "plum", "pear", "orange"];
+//    return fruits.includes(fruit); 
+// }
+// =======================25=========================
+// function getCommonElements(array1, array2) {
+//  const uniqieElements = [];
+//   for (const element of array1) {
+//  if (array2.includes(element)) {
+//       uniqieElements.push(element);
+//         }
+// }
+//   return uniqieElements;
+// }
+// =======================26========================
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//  for (const number of order)
+//    {
+//     total += number;
+//   }
+//    return total;
+// }
+// =======================27=====================
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
+// for ( const number of numbers)
+//    {
+//       if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   }
+//   return filteredNumbers;
+//  }
+// =====================28===================
+// const a = 3 % 3;
+// const b = 4 % 3;
+// const c = 11 % 8;
+// const d = 12 % 7;
+// const e = 8 % 3;
+// ==================29=====================
+// function getEvenNumbers(start, end) {
+//   const sum = [];
+//   for (let i = start; i <= end; i+=1) {
+//     if (i%2 === 0) {sum.push(i)}}
+// return sum;
+//       }
+// =========================30==================
+// const start = 6;
+// const end = 27;
+// let number;
+// for (let i = start; i < end; i += 1) {
+//   if (i % 5 === 0) {
+//     number = i;
+//     break;
+//   }
+// }
+// ============================31======================
+// function findNumber(start, end, divisor) {
+//    for (let i = start; i < end; i += 1) {
+//     if (i % divisor === 0) {
+//      return i;
+//     }
+//   }
+//  }
+// =========================32=========================
+// function includes(array, value) {
+//   for (i = 0; i <= array.length; i += 1){
+//     if (array[i] === value) {
+//       return true;
+//     }
+//   }
+//   return false;
+//   }
