@@ -401,3 +401,366 @@
 // const keys = Object.keys(apartment);
 // const values = Object.values(apartment);
 
+// ====================16=====================
+
+// function countTotalSalary(salaries) {
+//   let totalSalary = 0;
+//  const values = Object.values(salaries);
+// for (const value of values) {
+// totalSalary+=value
+// }
+//   return totalSalary;
+// }
+
+// =====================17================
+
+// const colors = [
+//   { hex: '#f44336', rgb: '244,67,54' },
+//   { hex: '#2196f3', rgb: '33,150,243' },
+//   { hex: '#4caf50', rgb: '76,175,80' },
+//   { hex: '#ffeb3b', rgb: '255,235,59' },
+// ];
+// const hexColors = [];
+// const rgbColors = [];
+// for (const color of colors) {
+// hexColors.push(color.hex);
+//   rgbColors.push(color.rgb);
+//   }
+
+// ======================18===================
+
+// const products = [
+//   { name: 'Radar', price: 1300, quantity: 4 },
+//   { name: 'Scanner', price: 2700, quantity: 3 },
+//   { name: 'Droid', price: 400, quantity: 7 },
+//   { name: 'Grip', price: 1200, quantity: 9 },
+// ];
+
+// function getProductPrice(productName) {
+//    for (const product of products){
+//   let name = product.name;
+//     if (productName===name){
+//     return product.price; 
+//     }
+//   }
+//   return null;
+//   }
+
+// =======================19====================
+
+// const products = [
+//   { name: 'Radar', price: 1300, quantity: 4 },
+//   { name: 'Scanner', price: 2700, quantity: 3 },
+//   { name: 'Droid', price: 400, quantity: 7 },
+//   { name: 'Grip', price: 1200, quantity: 9 },
+// ];
+
+// function getAllPropValues(propName) {
+//     const array = [];
+//   for (const product of products){
+//  if (product[propName]) {
+//       array.push(product[propName]);
+//     }
+//   }
+//   return array;
+//    }
+
+// ========================20=====================
+
+// const products = [
+//   { name: 'Radar', price: 1300, quantity: 4 },
+//   { name: 'Scanner', price: 2700, quantity: 3 },
+//   { name: 'Droid', price: 400, quantity: 7 },
+//   { name: 'Grip', price: 1200, quantity: 9 },
+// ];
+
+// function calculateTotalPrice(productName) {
+//   let total = 0;
+// for (const product of products){
+// let name = product.name;
+//   if (productName===name){
+//   total = product.price*product.quantity
+//   }
+// }
+// return total;
+//  }
+
+// =====================21=====================
+
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+// const {yesterday,today,tomorrow} = highTemperatures;
+// const meanTemperature = (yesterday + today + tomorrow) / 3;
+
+// =========================22=========================
+
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+// const {
+// yesterday,
+//   today,
+//   tomorrow,
+//   icon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg",
+// } = highTemperatures;
+// const meanTemperature = (yesterday + today + tomorrow) / 3;
+
+// =========================23======================
+
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+// const {
+// yesterday:highYesterday,
+//   today:highToday,
+//   tomorrow:highTomorrow,
+//   icon: highIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg",
+// }= highTemperatures;
+// const meanTemperature = (highYesterday + highToday + highTomorrow) / 3;
+
+// ======================24============================
+
+// const colors = [
+//   { hex: '#f44336', rgb: '244,67,54' },
+//   { hex: '#2196f3', rgb: '33,150,243' },
+//   { hex: '#4caf50', rgb: '76,175,80' },
+//   { hex: '#ffeb3b', rgb: '255,235,59' },
+// ];
+
+// const hexColors = [];
+// const rgbColors = [];
+
+// for (const {hex,rgb} of colors) {
+//   hexColors.push(hex);
+//   rgbColors.push(rgb);
+// }
+
+// ===================25========================
+
+// const forecast = {
+//   today: {
+//     low: 28,
+//     high: 32,
+//     icon: 'https://www.flaticon.com/svg/static/icons/svg/861/861059.svg',
+//   },
+//   tomorrow: {
+//     low: 27,
+//     high: 31,
+//   },
+// };
+// const {
+// today:{high:highToday,
+//   low:lowToday,
+//   icon:todayIcon="https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg"},
+//   tomorrow:{high:highTomorrow,
+//   low:lowTomorrow,
+//   icon: tomorrowIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg"},
+// }= forecast;
+
+// ==============================26==========================
+
+// function calculateMeanTemperature(forecast) {
+ 
+// const {
+// today:{low:todayLow, high:todayHigh},
+//   tomorrow:{low:tomorrowLow,high:tomorrowHigh},
+// }
+//   return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
+// }
+
+// ============================27==========================
+
+// const scores = [89, 64, 42, 17, 93, 51, 26];
+// const bestScore = Math.max(...scores);
+// const worstScore = Math.min(...scores);
+
+// ============================28============================
+
+// const firstGroupScores = [64, 42, 93];
+// const secondGroupScores = [89, 14, 51, 26];
+// const thirdGroupScores = [29, 47, 18, 97, 81];
+
+// const allScores = [...firstGroupScores,...secondGroupScores,...thirdGroupScores];
+// const bestScore = Math.max(...allScores);
+// const worstScore = Math.min(...allScores);
+
+// =======================29==========================
+
+// const defaultSettings = {
+//   theme: 'light',
+//   public: true,
+//   withPassword: false,
+//   minNumberOfQuestions: 10,
+//   timePerQuestion: 60,
+// };
+// const overrideSettings = {
+//   public: false,
+//   withPassword: true,
+//   timePerQuestion: 30,
+// };
+// const finalSettings = {...defaultSettings,...overrideSettings};
+
+// ========================30=========================
+
+// function makeTask(data) {
+//   const completed = false;
+//   const category = 'General';
+//   const priority = 'Normal';
+//  const newData = {completed, category, priority, ... data};
+//    return newData;
+//   }
+
+// ======================31====================
+
+// function add(...args) {
+//   let total=0;
+//   for (const arg of args){
+//     total += arg;
+//   }
+//   return total;
+// }
+
+// ================32==========================
+// function addOverNum(firstNumber,...args) {
+//   let total = 0;
+
+//   for (const arg of args) {
+//     if (arg>firstNumber){
+//     total += arg;}
+//   }
+//   return total;
+//   }
+
+// ===================33=====================
+
+// function findMatches(...args)
+//  {  const matches = [];
+//  for (let i = 1; i < args.length; i += 1) {
+//  if (args[0].includes(args[i])) {      matches.push(args[i]);
+//  }
+//  }
+// return matches;
+// } 
+
+// ====================34========================
+
+// const bookShelf = {
+//   books: ['The last kingdom', 'The guardian of dreams'],
+//   getBooks() {
+//     return 'Returning all books';
+//   },
+//   addBook(bookName) {
+//     return `Adding book ${bookName}`;
+//   },
+//   removeBook(bookName) {
+//     return `Deleting book ${bookName}`;
+//   },
+//   updateBook(oldName, newName) {
+//     return `Updating book ${oldName} to ${newName}`;
+//   },
+// };
+
+// ===================35==========================
+
+// const bookShelf = {
+//   books: ['The last kingdom', 'Haze', 'The guardian of dreams'],
+//   updateBook(oldName, newName) {
+//    	const index = this.books.indexOf(oldName);
+//     this.books.splice(index,1,newName);
+// 	  },
+// };
+
+// =========================36======================
+
+// const atTheOldToad = {
+//   potions:[],
+//   };
+
+// ========================37=======================
+
+// const atTheOldToad = {
+//     potions: ['Speed potion', 'Dragon breath', 'Stone skin'],
+//   getPotions(){
+//   return this.potions;
+//   }
+//   };
+
+// ========================38=============================
+
+// const atTheOldToad = {
+//   potions: ['Speed potion', 'Dragon breath', 'Stone skin'],
+//   addPotion(potionName) {
+//     this.potions.push(potionName);
+//       },
+// };
+
+// =========================39============================
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   removePotion(potionName) {
+   
+//   const bookIndex = this.potions.indexOf(potionName);
+//    return this.potions.splice(bookIndex,1);
+//       },
+// };
+
+// =========================40======================
+
+// const atTheOldToad = {
+//   potions: ['Speed potion', 'Dragon breath', 'Stone skin'],
+//   updatePotionName(oldName, newName) {
+//      	const index = this.potions.indexOf(oldName);
+//     this.potions.splice(index,1,newName);
+//       },
+// };
+
+// ==========================41=====================
+
+// const atTheOldToad = {
+//   potions: [
+//     { name: 'Speed potion', price: 460 },
+//     { name: 'Dragon breath', price: 780 },
+//     { name: 'Stone skin', price: 520 },
+//   ],
+//     getPotions() {
+//     return this.potions;
+//   },
+//   addPotion(potionName) {
+//     const { potions } = this;
+//     const { name } = potionName;
+//     for (let i = 0; i < potions.length; i += 1) {
+//       if (potions[i].name === name) {
+//         return `Potion ${name} is already equipped!`;
+//       }
+//       potions.push(potionName);
+//     }
+//   },
+//   removePotion(potionName) {
+//     const { potions } = this;
+//     for (let i = 0; i < potions.length; i += 1) {
+//       if (potions[i].name === potionName) {
+//         potions.splice(i, 1);
+//         return potions;
+//       }
+//     }
+//     return `Potion ${potionName} is not in inventory!`;
+//   },
+//   updatePotionName(oldName, newName) {
+//     const { potions } = this;
+//     for (let i = 0; i < potions.length; i += 1) {
+//       if (potions[i].name === oldName) {
+//         potions[i].name = newName;
+//         return potions;
+//       }
+//     }
+//     return `Potion ${oldName} is not in inventory!`;
+//   },
+//  };
