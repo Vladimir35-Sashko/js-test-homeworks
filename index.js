@@ -948,3 +948,78 @@
 // // Почта poly@hotmail.de удалена из рассылки.
 
 // console.log(service.mailingList); // ['mango@mail.com', 'ajax@jmail.net', 'kiwi@mail.uk']
+
+
+// ========================МОДУЛЬ 5=============================
+
+// ===========================5======================
+
+// function Car({ brand, model, price }) {
+//   this.brand = brand;
+//   this.model = model;
+//   this.price = price;
+// }
+// Car.prototype.getPrice = function() {
+//   return this.price;
+// };
+
+// Car.prototype.changePrice = function(newPrice){
+// this.price = newPrice;
+// };
+
+// =============================6============================
+
+// function Storage(items){
+// this.items = items;
+// };
+
+// Storage.prototype.getItems = function() {
+// return this.items;
+// };
+
+// Storage.prototype.addItem = function(newItem){
+//  return this.items.push(newItem);
+// };
+
+// Storage.prototype.removeItem = function(item){
+// return this.items.splice(this.items.indexOf(item),1);
+// };
+
+// const storage = new Storage(['Нанитоиды', 'Пролонгер', 'Антигравитатор']);
+// console.log(storage.getItems()); // ["Нанитоиды", "Пролонгер", "Антигравитатор"]
+// storage.addItem('Дроид');
+// console.log(storage.getItems()); // ["Нанитоиды", "Пролонгер", "Антигравитатор", "Дроид"]
+// storage.removeItem('Пролонгер');
+// console.log(storage.getItems()); // ["Нанитоиды", "Антигравитатор", "Дроид"]
+
+// ==============================7===========================
+
+// function StringBuilder(baseValue){
+// this.value = baseValue;
+// };
+
+// StringBuilder.prototype.getValue = function(){
+// return this.value;
+// };
+
+// StringBuilder.prototype.padEnd = function(str){
+// this.value += str;
+// };
+
+// StringBuilder.prototype.padStart = function(str){
+// this.value = str + this.value;
+//  };
+
+// StringBuilder.prototype.padBoth = function(str){
+// this.value = str+this.value+str;
+// };
+
+// const builder = new StringBuilder('.');
+// console.log(builder.getValue()); // '.'
+// builder.padStart('^');
+// console.log(builder.getValue()); // '^.'
+// builder.padEnd('^');
+// console.log(builder.getValue()); // '^.^'
+// builder.padBoth('=');
+// console.log(builder.getValue()); // '=^.^='
+
